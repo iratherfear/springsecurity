@@ -32,7 +32,7 @@ public class SpringConfigurationBasic  {
     }
 
     @Bean
-    public UserDetailsService userDetailsService(DataSource dataSource) {
+    public UserDetailsService userDetailsService() {
         UserDetails user1 = User.withUsername("test1")
                                 .password("{noop}test")
                                 .roles("USER")
